@@ -15,8 +15,6 @@ gem "puma", "~> 5.0"
 # Rack middleware for blocking & throttling abusive requests
 gem 'rack-attack'
 
-gem 'httparty', '~> 0.13.7'
-
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
