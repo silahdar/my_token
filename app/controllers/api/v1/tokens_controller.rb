@@ -1,6 +1,7 @@
 class Api::V1::TokensController < ApplicationController
   def tokenize
-    token = Token.new(token_params)
+    # token = Token.new(token_params)
+    token = Token.new(secret: params[:secret])
 
     if token.save
       render json: { token: token }, status: :created
